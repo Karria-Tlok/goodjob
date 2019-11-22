@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="image_box">
+    <image src="https://s3.cdn.xiangha.com/videoImg/201509/0721/55ed949bcb4da.JPG/MjUweDI1MA.webp" background-size="cover"></image>
+  </view>
+</view>

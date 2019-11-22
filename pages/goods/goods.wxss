@@ -1,0 +1,14 @@
+.container{
+  margin: 0;
+  padding: 0;
+}
+.image_box{
+  margin: 10rpx auto;
+  width: 500rpx;
+  height:350rpx;
+}
+
+.image_box image{
+  width: 100%;
+  height:100%;
+}

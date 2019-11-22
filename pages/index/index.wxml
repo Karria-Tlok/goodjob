@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search">
+    <navigator url="/pages/search/search" class="input">
+      <image class="icon"></image>
+      <text class="txt">菜谱搜索</text>
+    </navigator>
+    <!-- <image class="scanner"></image> -->
+  </view>
+  <swiper class="banner" indicator-dots="true"
+    autoplay="true" interval="2000" duration="500">
+      <swiper-item wx:for="{{banner}}" wx:key="{{item.id}}">
+        <image src="{{item.url}}" background-size="cover"></image>
+      </swiper-item>
+  </swiper>
+  <!-- <view class="bg"></view> -->
+  <view class="menu">
+    <view class="menu-item" wx:for="{{menu}}" wx:key="{{item.id}}">
+      <image class="menu-icon-{{item.id}}"></image>
+      <text class="txt">{{item.title}}</text>
+    </view>
+  </view>
+  <view class="list">
+    <view class="list-item" wx:for="{{list}}" wx:key="{{item.id}}">
+      <!-- <navigator url="/pages/goods/goods?id={{item.id}}"> -->
+        <navigator class="icon-box" url="/pages/goods/goods?id={{item.id}}">
+          <image src="{{item.src}}" class="icon"></image>
+        </navigator>
+        <navigator class="list-item-content" url="/pages/goods/goods?id={{item.id}}">
+
+          <text class="title">{{item.title}}</text>
+          <view class="sn">
+          共{{item.number}}个菜谱 
+          {{item.readed}} 浏览
+          {{item.collected}} 收藏
+          </view>
+        </navigator>
+      <!-- </navigator> -->
+    </view>
+  </view>
+</view>

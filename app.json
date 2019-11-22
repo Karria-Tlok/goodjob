@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/log/log",
+    "pages/user/user",
+    "pages/search/search",
+    "pages/goods/goods"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00b38a",
+    "navigationBarTitleText": "拉勾",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "selectedColor": "#00b38a",
+    "color": "#666",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/home_unselect.png",
+        "selectedIconPath": "static/images/home_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/log/log",
+        "iconPath": "static/images/list_unselect.png",
+        "selectedIconPath": "static/images/list_select.png",
+        "text": "言职"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/images/smile_unselect.png",
+        "selectedIconPath": "static/images/smile_selected.png",
+        "text": "我"
+      }]
+  },
+  "sitemapLocation": "sitemap.json"
+}
