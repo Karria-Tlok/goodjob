@@ -1,0 +1,26 @@
+<view>
+  <view class="img_header">
+    <view class="img">
+      <image src="{{userImgUrl}}"></image>
+    </view>
+    <view class="nick_name">
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+  <navigator url="{{item.link}}" wx:for="{{array1}}" wx:key="{{item.id}}"  >
+  <view class="item" >
+    <image src="{{item.img}}"></image> 
+      <view class="item_value">
+        {{item.value}}
+      </view>
+  </view>
+</navigator>
+
+  <view class="bg"></view>
+  <view class="item" wx:for="{{array2}}" wx:key="{{item.id}}">
+    <image src="{{item.img}}"></image>
+    <view class="item_value">
+      {{item.value}}
+    </view>
+  </view>
+</view>

@@ -1,16 +1,16 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/log/log",
     "pages/user/user",
-    "pages/search/search",
-    "pages/goods/goods"
+    "pages/resume/resume",
+    "pages/job/job"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#00b38a",
     "navigationBarTitleText": "拉勾",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#2c2c2c"
   },
   "tabBar": {
     "backgroundColor": "#fafafa",
@@ -25,7 +25,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/log/log",
+        "pagePath": "pages/job/job",
         "iconPath": "static/images/list_unselect.png",
         "selectedIconPath": "static/images/list_select.png",
         "text": "言职"
@@ -35,7 +35,8 @@
         "iconPath": "static/images/smile_unselect.png",
         "selectedIconPath": "static/images/smile_selected.png",
         "text": "我"
-      }]
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

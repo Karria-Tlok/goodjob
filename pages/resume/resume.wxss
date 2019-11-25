@@ -1,0 +1,58 @@
+/* pages/resume/resume.wxss */
+
+page{
+  background: #e6e6e6;
+  box-sizing: border-box;
+}
+
+.font{
+  font-size: 30rpx;
+  font-weight: bolder;
+  margin: 20rpx 20rpx;
+}
+
+.user_picture{
+  width: 710rpx;
+  margin:0 auto;
+  background: white;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.img{
+  width:90rpx;
+  height:90rpx;
+  overflow: hidden;
+  border-radius: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img image{
+  width:70rpx;
+  height:70rpx;
+}
+.user_information{
+  width: 710rpx;
+  margin: 0 auto;
+  /* padding:0 30rpx; */
+  background: white;
+}
+.item_font{
+  font-size: 30rpx;
+  padding: 10rpx 10rpx;
+}
+.user_skill{
+  width: 710rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  /* padding:0 30rpx; */
+  background: white;
+}
+.skill_font{
+  display: flex;
+  justify-content: space-between;
+}

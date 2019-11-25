@@ -1,0 +1,27 @@
+<!--pages/resume/resume.wxml-->
+<view>
+  <view class="font">
+    添加头像
+  </view>
+  <view class="user_picture">
+    <view class="img" bindtap="handleClickPicture">
+      <image src="{{imgUrl}}"></image>
+    </view>
+    点击头像
+  </view>
+  <view class="font">
+    基本信息
+  </view>
+  <view class="user_information">
+    <view wx:for="{{information}}" wx:key="{{item.id}}">
+      <view class="item_font">{{item.key}}: {{item.value}}</view>
+    </view>
+  </view>
+  <view class="font">
+    技能评价
+  </view>
+  <view class="user_skill">
+    <view class="skill_font"><view>java</view> <view>精通</view> </view>
+   <progress percent="60" color="green" /> 
+  </view>
+</view>
